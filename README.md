@@ -2,6 +2,17 @@
 
 CustomColumnResizer is a fork [ColumnResizer](https://github.com/Bayer-Group/column-resizer). The plugin is rewritten as vanilla ES6 javascript.
 
+## Install
+
+You can install the package via yarn (or npm):
+
+```npm
+npm install custom-column-resizer
+```
+```yarn
+yarn add custom-column-resizer
+```
+
 ## Features
 
 * Supports mouse and touch events
@@ -20,7 +31,7 @@ Column-resizer can be used directly as a script in a page:
   <script src="js/column-resizer.js"></script>
   <script type="text/javascript">
      window.onload = function() {
-        let resizable = ColumnResizer.default;
+        let resizable = CustomColumnResizer.default;
         
           new resizable(document.querySelector("#somethingUnique"),{
               liveDrag:true,
@@ -84,7 +95,7 @@ class MyTable extends Component {
         const options = this.props.resizerOptions;
         options.remoteTable = remoteTable;
         if (!this.resizer) {
-            this.resizer = new ColumnResizer(
+            this.resizer = new CustomColumnResizer(
                 ReactDOM.findDOMNode(this)
                     .querySelector(`#${this.tableId}`), options);
         } else {

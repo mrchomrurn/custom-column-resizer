@@ -10,7 +10,7 @@ const counter = (() => {
     };
 })();
 
-export default class ColumnResizer {
+export default class CustomColumnResizer {
     ID = 'id';
     PX = 'px';
     RESIZABLE = 'grip-resizable';
@@ -346,7 +346,7 @@ export default class ColumnResizer {
      * @returns {Object}
      */
     extendOptions = (options) => {
-        const extOptions = Object.assign({}, ColumnResizer.DEFAULTS, options);
+        const extOptions = Object.assign({}, CustomColumnResizer.DEFAULTS, options);
         extOptions.fixed = true;
         extOptions.overflow = false;
         switch (extOptions.resizeMode) {
@@ -647,7 +647,7 @@ export default class ColumnResizer {
     };
 }
 
-ColumnResizer.DEFAULTS = {
+CustomColumnResizer.DEFAULTS = {
     //attributes:
     resizeMode: 'fit',              //mode can be 'fit', 'flex' or 'overflow'
     draggingClass: 'grip-drag',	    //css-class used when a grip is being dragged (for visual feedback purposes)

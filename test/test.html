@@ -29,11 +29,11 @@
     </style>
 
 
-    <script src="../dist/column-resizer.js"></script>
+    <script src="../dist/custom-column-resizer.js"></script>
     <script type="text/javascript">
       window.onload = function () {
         const elem = document.querySelector(".test");
-        const colResizable = ColumnResizer.default;
+        const colResizable = CustomColumnResizer.default;
         new colResizable(elem, {
             liveDrag: true,
             gripInnerHtml: "<div class='grip'></div>",
@@ -41,7 +41,7 @@
             resizeMode: 'overflow',
             widths: [275, 100, 500]
         });
-          let resizable = ColumnResizer.default;
+          let resizable = CustomColumnResizer.default;
 
           new resizable(document.querySelector("#somethingUnique1"),{
               liveDrag:true,

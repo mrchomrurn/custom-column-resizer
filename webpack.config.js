@@ -3,7 +3,7 @@ const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-    entry: './src/ColumnResizer.js',
+    entry: './src/CustomColumnResizer.js',
     module: {
         rules: [
             {
@@ -22,9 +22,9 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/',
-        filename: 'column-resizer.js',
+        filename: 'custom-column-resizer.js',
         libraryTarget: 'umd',
-        library: 'ColumnResizer',
+        library: 'CustomColumnResizer',
         globalObject: 'this'
     },
     optimization: {
