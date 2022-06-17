@@ -1,6 +1,6 @@
 # ColumnResizer
 
-ColumnResizer is a fork of the jQuery plugin [colResizable](http://bacubacu.com/colresizable/). The plugin is rewritten as vanilla ES6 javascript.
+CustomColumnResizer is a fork [ColumnResizer](https://github.com/Bayer-Group/column-resizer). The plugin is rewritten as vanilla ES6 javascript.
 
 ## Features
 
